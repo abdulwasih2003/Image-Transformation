@@ -6,18 +6,18 @@ To perform image transformation such as Translation, Scaling, Shearing, Reflecti
 Anaconda - Python 3.7
 
 ## Algorithm:
-### Step1:
+### Step 1:
 Import the required libraries and read the original image.
 
-### Step2:
+### Step 2:
 Translate the image.
-### Step3:
+### Step 3:
 Scale the image.
 
-### Step4:
+### Step 4:
 Shear the image.
 
-### Step5:
+### Step 5:
 Find reflection of image.
 ### Step 6:
 Rotate the image.
@@ -43,7 +43,7 @@ plt.imshow(img)
 plt.show()
 rows,cols,dim=img.shape
 ~~~
-### i)Image Translation:
+### i) Image Translation:
 ~~~
 M=np.float32([[1,0,20],
              [0,1,50],
@@ -63,7 +63,7 @@ plt.axis('off')
 plt.imshow(scaled_img)
 plt.show()
 ~~~
-### iii)Image shearing:
+### iii) Image shearing:
 ~~~
 M_x=np.float32([[1,0.2,0],
                [0,1,0],
@@ -81,7 +81,7 @@ plt.imshow(sheared_img_yaxis)
 plt.show()
 ~~~
 
-### iv)Image Reflection:
+### iv) Image Reflection:
 ~~~
 M_x=np.float32([[1,0,0],
                [0,-1,rows],
@@ -99,7 +99,7 @@ plt.imshow(reflected_img_yaxis)
 plt.show()
 ~~~
 
-### v)Image Rotation:
+### v) Image Rotation:
 ~~~
 angle=np.radians(45)
 M=np.float32([[np.cos(angle),-(np.sin(angle)),0],
@@ -110,7 +110,7 @@ plt.axis('off')
 plt.imshow(rotated_img)
 plt.show()
 ~~~
-### vi)Image Cropping:
+### vi) Image Cropping:
 ~~~
 cropped_img=img[20:150,60:230]
 plt.axis('off')
@@ -120,7 +120,7 @@ plt.show()
 ## Output:
 ## Original Image:
 ![output](./img/1.png)
-## i)Image Translation:
+## i) Image Translation:
 ![output](./img/2.png)
 
 
@@ -128,21 +128,21 @@ plt.show()
 ![output](./img/3.png)
 
 
-## iii)Image shearing:
+## iii) Image shearing:
 ![output](./img/4.png)
 ![output](./img/5.png)
 
 
-## iv)Image Reflection:
+## iv) Image Reflection:
 ![output](./img/6.png)
 ![output](./img/7.png)
 
 
-## v)Image Rotation:
+## v) Image Rotation:
 ![output](./img/8.png)
 
 
-## vi)Image Cropping:
+## vi) Image Cropping:
 ![output](./img/9.png)
 
 
